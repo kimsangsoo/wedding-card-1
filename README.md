@@ -8,4 +8,4 @@
 
 * 날짜 : 2022년 11월 27일 15시
 * 장소 : 서울 강남구 강남대로 262 B1층(도곡동 949-3)
-* 청첩장 url : https://andersonchoi.github.io/wedding-card/
+* 청첩장 url : https://kimsangsoo.github.io/wedding-card-1/index.html
