@@ -17,11 +17,14 @@
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
     <link href="css/ekko-lightbox.css" rel="stylesheet">
     <link href="styles/main.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Gamja+Flower|Gugi|Noto+Serif+KR|Stylish|Sunflower:300"
-          rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Gamja+Flower|Gugi|Noto+Serif+KR|Stylish|Sunflower:300"
+          rel="stylesheet"> -->
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=mvvGZTSwxl8weBgnEgzQ"></script>
     <script src="https://code.jquery.com/jquery-2.2.1.js"></script>
+    <script src="https://kit.fontawesome.com/4b407570de.js" crossorigin="anonymous"></script>
     <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/1.7.1/remarkable.js" type="text/javascript"></script>
+    
     <script type="text/javascript">
         function sendMail() {
 
@@ -125,7 +128,7 @@
                 </div>
             </nav>
         </div>
-        <div class="ww-section" id="couple">
+        <!-- <div class="ww-section" id="couple">
             <div class="container">
                 <h2 class="h1 text-center pb-3 ww-title" style="font-family: 'Noto Serif KR', serif;">신랑 & 신부</h2>
                 <div class="row text-center">
@@ -145,22 +148,15 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="ww-section" id="couple">
             <div class="container">
-                <section class="greeting-section">
-                    <hr />
-                    <!-- <div class="btn-group" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-primary">Left</button>
-                        <button type="button" class="btn btn-primary">Middle</button>
-                        <button type="button" class="btn btn-primary">Right</button>
-                      </div> -->
-                    <div class="text-center font-weight-bold" style="font-family: 'Noto Serif KR', serif;">INVITATION</div>
+                <h2 class="h1 text-center pb-3 ww-title" style="font-family: 'Noto Serif KR', serif;">INVITATION</h2>
                     <div class="row">
-                        <div class="col">
-                        </div>
+                        <div class="col"></div>
                         <div class="col-sm-6">
-                            <div class="mt-3 text-center" style="font-size: 1em;  line-height: 2;">서로가 마주보며 다져온 사랑을
+                            
+                            <div class="mt-3 text-center" style="font-size: 1em; line-height: 2; font-family: 'Noto Serif KR', serif;">서로가 마주보며 다져온 사랑을
                                 이제 함께 한 곳을 바라보며
                                 걸어갈 수 있는 큰 사랑으로
                                 키우고자 합니다.
@@ -168,23 +164,70 @@
                                 지켜나갈 수 있도록
                                 앞날을 축복해 주시면
                                 감사하겠습니다.</div>
-                                <a href="tel:01012345678">홍길동 <i class="fas fa-phone-square"></i></a>
-                                <!-- <div id="parents">
-                                    류광민 🤍 이숙경<span class="suffix">의 장남  </span> <span style="font-weight:bold">류성두</span><br>
-                                    이필우 🤍 박명자<span class="suffix">의 장녀  </span> <span style="font-weight:bold">이수연</span>
-                                </div> -->
+                                
+                                <!--  -->
+                                <div class="mt-5 text-center" style="line-height: 2; font-family: 'Noto Serif KR', serif;">
+                                    <div>
+                                        <span>김영태 · 최정희 의 장남 <span class="font-weight-bold  ml-3">김상수</span></span>
+                                    </div>
+                                    <div>
+                                        <span>최수경 · 정명희 의 장녀 <span class="ml-3 font-weight-bold">최효실</span></span>
+                                    </div>
+                                </div>
+                                <div class="row mt-5 text-center" style="line-height: 2; font-family: 'Noto Serif KR', serif;">
+                                    <div class="col">
+                                        <div class="text-info">신랑측</div>
+                                        <hr />
+                                        <div>
+                                            <span class="text-secondary">신랑</span> 김상수
+                                            <a href="tel:01050087423">
+                                                <i class="fas fa-phone-square text-secondary"></i>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <span class="text-secondary">아버지</span> 김영태
+                                            <a href="tel:01036800800">
+                                                <i class="fas fa-phone-square text-secondary"></i>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <span class="text-secondary">어머니</span> 최정희
+                                            <a href="tel:01091020667">
+                                                <i class="fas fa-phone-square text-secondary"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="text-danger">신부측</div>
+                                        <hr />
+                                        <div>
+                                            <span class="text-secondary">신랑</span> 최효실
+                                            <a href="tel:01029255352">
+                                                <i class="fas fa-phone-square text-secondary"></i>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <span class="text-secondary">아버지</span> 최수경
+                                            <a href="tel:01047205354">
+                                                <i class="fas fa-phone-square text-secondary"></i>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <span class="text-secondary">어머니</span> 정명희
+                                            <a href="tel:01052775253">
+                                                <i class="fas fa-phone-square text-secondary"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                         </div>
-                        <div class="col">
-                        </div>
-                      </div>
-                    
-                    
-                </section>
+                        <div class="col"></div>
+                    </div>
             </div>
         </div>
 
         
-        <div class="ww-section bg-light" id="events">
+        <!-- <div class="ww-section bg-light" id="events">
             <div class="container ww-wedding-event">
                 <h2 class="h1 text-center pb-3 ww-title" style="font-family: 'Noto Serif KR', serif;">초대합니다</h2>
                     <div class="col text-center mb-5">
@@ -233,13 +276,16 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="ww-section" id="gallery">
+        </div> -->
+        <div class="ww-section bg-light" id="gallery">
             <div class="ww-photo-gallery">
                 <div class="container">
                     <h2 class="h1 text-center pb-3 ww-title" style="font-family: 'Noto Serif KR', serif;">포토 갤러리</h2>
                     <div class="ww-gallery">
-                        <div class="card-columns">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                          </div>
+                        <div class="card-columns mt-5">
                             <div class="card" data-groups="[&quot;party&quot;,&quot;wedding&quot;]">
                                 <a data-gallery="ww-gallery" data-toggle="lightbox">
                                     <img alt="Gallery Pic 2" class="img-fluid" src="images/pic2.jpeg"/>
@@ -375,8 +421,7 @@
                 <div class="col text-center">
                     <h2 class="h1 text-center pb-3 ww-title" style="font-family: 'Noto Serif KR', serif;">오시는 길</h2>
                     <div>
-                        <h5 style="font-family: 'Noto Serif KR', serif;">센텀사이언스파크웨딩홀 23층 스카이홀</h5>
-                        <h6 style="font-family: 'Noto Serif KR', serif;">(부산 해운대구 센텀중앙로 79)</h6>
+                        <h5 style="font-family: 'Noto Serif KR', serif;">서울 강남구 강남대로 262 B1층(도곡동 949-3)</h5>
                     </div>
                 </div>
 
@@ -397,12 +442,16 @@
                             </a>
                         </div>
                         <div class="col text-center">
-                            <label style="font-family: 'Noto Serif KR', serif; font-size: 15px;">
-                                셔틀버스 - 센텀시티역 4번출구앞에서 15분 간격으로 운행
-                            </label>
+                            <div style="font-family: 'Noto Serif KR', serif; font-size: 15px;">
+                                전주 셔틀버스 - 전북대학교 앞
+                            </div>
+                            <div style="font-family: 'Noto Serif KR', serif; font-size: 15px;">
+                                서울 셔틀버스 - 양재역 앞
+                            </div>
                         </div>
                         <div class="my-3">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.297439052569!2d129.1238775160104!3d35.1741384652207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356892c2513ecf5d%3A0x7d362ece2091e2f8!2z7IS87YWA7IKs7J207Ja47Iqk7YyM7YGsIOy7qOuypOyFmO2ZgA!5e0!3m2!1sko!2skr!4v1554092125630!5m2!1sko!2skr" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            <div id="map" style="width:100%;height:400px;"></div>
+                            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.297439052569!2d129.1238775160104!3d35.1741384652207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356892c2513ecf5d%3A0x7d362ece2091e2f8!2z7IS87YWA7IKs7J207Ja47Iqk7YyM7YGsIOy7qOuypOyFmO2ZgA!5e0!3m2!1sko!2skr!4v1554092125630!5m2!1sko!2skr" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe> -->
                         </div>
                     </div>
                 </div>
@@ -477,6 +526,13 @@
         <i class="fa fa-music fa-2x" onclick="document.getElementById('player').play()"></i>
     </div>
 </div>
-
+<script>
+    var mapOptions = {
+        center: new naver.maps.LatLng(37.3595704, 127.105399),
+        zoom: 10
+    };
+    
+    var map = new naver.maps.Map('map', mapOptions);
+</script>
 </body>
 </html>
