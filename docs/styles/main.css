@@ -10059,3 +10059,18 @@ body {
     left: 0;
     margin: 0px 15px 15px 15px;
 }
+
+.sec-tit{
+	position:relative;
+	margin-bottom:2.5rem;
+	padding-bottom:0.688rem;
+	line-height:0;
+	text-align:center
+}
+
+ .sec-txt{
+	position:relative;
+	margin-bottom:1.563rem;
+	padding-bottom:4.063rem;
+    
+}
