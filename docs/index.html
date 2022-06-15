@@ -352,6 +352,10 @@
         level: 3
     };
 
+    var map = new kakao.maps.Map(container, options);
+    map.setZoomable(false)
+    map.setDraggable(false);
+
     // 마커가 표시될 위치입니다 
     var markerPosition  = new kakao.maps.LatLng(37.486852,127.033308); 
     // 마커를 생성합니다
@@ -359,9 +363,7 @@
         position: markerPosition
     });
 
-    var map = new kakao.maps.Map(container, options);
-    map.setZoomable(false)
-    map.setDraggable(false);
+    marker.setMap(map);
 </script>
 </body>
 </html>
