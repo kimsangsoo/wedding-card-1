@@ -7,6 +7,7 @@
     <title>상수와 효실이 결혼식에 초대 합니다.</title>
     
     <meta content="김상수과 최효실의 결혼식에 와서 축하해주세요!" name="description"/>
+    <meta property="og:image" content="images/2.jpeg">
     <meta property="og:image" content="images/pic2.jpeg">
     <meta property="fb:app_id" content="781066922265598" />
     <meta property="fb:admins" content="Choi.Anderson"/>
@@ -56,31 +57,31 @@
             return result;
         }
 
-        // $(document).ready(function () {
+        $(document).ready(function () {
 
-        //     function getText(){
-        //         var result = null;
-        //         $.ajax( { url: "https://raw.githubusercontent.com/AndersonChoi/wedding-card/master/README.md",
-        //                 type: 'get',
-        //                 dataType: 'html',
-        //                 async: false,
-        //                 success: function(data) { result = data; }
-        //             }
-        //         );
-        //         FileReady = true;
-        //         return result;
-        //     }
-        //     var markdown_source = getText();
-        //     var comment_contents = markdown_source.split("축하의 말")[1];
+            function getText(){
+                var result = null;
+                $.ajax( { url: "https://raw.githubusercontent.com/AndersonChoi/wedding-card/master/README.md",
+                        type: 'get',
+                        dataType: 'html',
+                        async: false,
+                        success: function(data) { result = data; }
+                    }
+                );
+                FileReady = true;
+                return result;
+            }
+            var markdown_source = getText();
+            var comment_contents = markdown_source.split("축하의 말")[1];
 
-        //     var md = new Remarkable();
-        //     $("#comments").append(md.render(comment_contents));
+            var md = new Remarkable();
+            $("#comments").append(md.render(comment_contents));
 
             
-        //     if(findGetParameter('gift')=='false'){
-        //         $('#gifts').hide();
-        //     }
-        // });
+            if(findGetParameter('gift')=='false'){
+                $('#gifts').hide();
+            }
+        });
     </script>
 </head>
 
@@ -94,8 +95,8 @@
             <div class="ww-wedding-announcement d-flex align-items-center justify-content-start">
                 <div class="container ww-announcement-container">
                     <p class="ww-couple-name ww-title" style="font-size:4.0em">Sangsoo & Hyosil</p>
-                    <p class="h2 mt-5 ww-title" style="font-family: 'Gugi', cursive; font-size:1.0em">
-                        | WE ARE GETTING MARRIED |
+                    <p class="h2 mt-5 ww-title" style="font-family: 'Noto Serif KR', serif; font-size:1.0em">
+                        WE ARE GETTING MARRIED
                     </p>
                     <p class="h2 mt-5 ww-title" style="font-family: 'Noto Serif KR', serif; font-size:1.0em; letter-spacing:-1px">
                         <b style="font-size:1.4em;">2022. 11. 27. SUN PM 03:00</b>
@@ -124,7 +125,7 @@
                 </div>
             </nav>
         </div>
-        <!-- <div class="ww-section" id="couple">
+        <div class="ww-section" id="couple">
             <div class="container">
                 <h2 class="h1 text-center pb-3 ww-title" style="font-family: 'Noto Serif KR', serif;">신랑 & 신부</h2>
                 <div class="row text-center">
@@ -132,19 +133,19 @@
                         <div class="mt-3">
                             <h3 class="h2 ww-title" style="font-family: 'Sunflower', sans-serif; font-size:1.5em">
                                 최효실</h3>
-                            <img alt="Groom" class="img-fluid" src="images/mainsiri.jpeg"/>
+                            <img alt="Groom" class="img-fluid" src="images/one2.jpeg"/>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="mt-3">
                             <h3 class="h2 ww-title" style="font-family: 'Sunflower', sans-serif; font-size:1.5em">
                                 김상수</h3>
-                            <img alt="Bride" class="img-fluid" src="images/mainss.jpeg"/>
+                            <img alt="Bride" class="img-fluid" src="images/one1.jpeg"/>
                         </div>
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
         <div class="ww-section" id="invitation">
             <div class="container">
                 <h2 class="h1 text-center pb-3 ww-title" style="font-family: 'Noto Serif KR', serif;">INVITATION</h2>
@@ -233,20 +234,20 @@
                         <div class="card-columns mt-5">
                             <div class="card" data-groups="[&quot;party&quot;,&quot;wedding&quot;]">
                                 <a data-gallery="ww-gallery" data-toggle="lightbox">
-                                    <img alt="Gallery Pic 2" class="img-fluid" src="images/1.jpeg"/>
+                                    <img alt="Gallery Pic 2" class="img-fluid" src="images/main2.jpeg"/>
                                 </a>
                             </div>
                             <div class="card" data-groups="[&quot;vacation&quot;]">
                                 <a data-gallery="ww-gallery" data-toggle="lightbox">
-                                    <img alt="Gallery Pic 3" class="img-fluid" src="images/2.jpeg"/>
+                                    <img alt="Gallery Pic 3" class="img-fluid" src="images/sub1.jpeg"/>
                                 </a>
                             </div>
                             <div class="card" data-groups="[&quot;party&quot;,&quot;vacation&quot;]">
                                 <a data-gallery="ww-gallery" data-toggle="lightbox">
-                                    <img alt="Gallery Pic 4" class="img-fluid" src="images/3.jpeg"/>
+                                    <img alt="Gallery Pic 4" class="img-fluid" src="images/sub2.jpeg"/>
                                 </a>
                             </div>
-                            <div class="card" data-groups="[&quot;vacation&quot;]">
+                            <!-- <div class="card" data-groups="[&quot;vacation&quot;]">
                                 <a data-gallery="ww-gallery" data-toggle="lightbox">
                                     <img alt="Gallery Pic 5" class="img-fluid" src="images/4.jpeg"/>
                                 </a>
@@ -265,7 +266,7 @@
                                 <a data-gallery="ww-gallery" data-toggle="lightbox">
                                     <img alt="Gallery Pic 7" class="img-fluid" src="images/7.jpeg"/>
                                 </a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
