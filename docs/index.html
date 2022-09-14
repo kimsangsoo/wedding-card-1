@@ -507,15 +507,13 @@
                   <div class="collapse" id="ss">
                     <div class="card card-body">
                       <div class="date">
-                        <span>농협</span>
-                        <span id="ss_parents">312 0118 4610 11</span> 김상수.
-                        (부)김영태
-                        <span class="badge" id="ss_parents_badge">복사</span>
+                        농협 312 0118 4610 11 김상수. (부)김영태
+                        <span class="badge" id="ss_parents">복사</span>
                       </div>
 
                       <div class="date">
                         국민 763202 01 135025 김상수
-                        <span class="badge">복사</span>
+                        <span class="badge" id="ss_me">복사</span>
                       </div>
                     </div>
                   </div>
@@ -544,11 +542,13 @@
                     <div class="card card-body">
                       <div class="date">
                         농협 352 1276 7964 43 최수경
-                        <span class="badge badge-info">복사</span>
+                        <span class="badge badge-info" id="hs_parents"
+                          >복사</span
+                        >
                       </div>
                       <div class="date">
                         국민 933902 01 589710 최효실
-                        <span class="badge badge-warning">복사</span>
+                        <span class="badge badge-warning" id="hs_me">복사</span>
                       </div>
                     </div>
                   </div>
@@ -557,8 +557,28 @@
             </div>
           </div>
 
-          <div class="col text-center">
-            <p class="date">청첩장 주소 복사하기</p>
+          <!-- <div class="col text-center">
+            <span class="date">청첩장 주소 복사하기</span>
+          </div> -->
+        </div>
+      </div>
+
+      <div id="fh5co-testimonial">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box"
+            >
+              <span>청첩장 주소 복사하기</span
+              ><i
+                class="fa fa-share pl-1"
+                aria-hidden="true"
+                id="wedding_copy"
+              ></i>
+              <br />
+              <span>카카오톡 공유하기</span
+              ><i class="fa fa-share pl-1" aria-hidden="true"></i>
+            </div>
           </div>
         </div>
       </div>
@@ -647,9 +667,97 @@
   </script>
 
   <script>
-    document.getElementById("ss_parents_badge").onclick = function () {
+    document.getElementById("ss_parents").onclick = function () {
       // div 내부 텍스트 취득
-      var valOfDIV = document.getElementById("ss_parents").innerText;
+      var valOfDIV = "농협 312 0118 4610 11";
+
+      // textarea 생성
+      var textArea = document.createElement("textarea");
+
+      // textarea 추가
+      document.body.appendChild(textArea);
+
+      // textara의 value값으로 div내부 텍스트값 설정
+      textArea.value = valOfDIV;
+
+      // textarea 선택 및 복사
+      textArea.select();
+      document.execCommand("copy");
+
+      // textarea 제거
+      document.body.removeChild(textArea);
+      alert(valOfDIV + " 복사 되었습니다.");
+    };
+
+    document.getElementById("ss_me").onclick = function () {
+      // div 내부 텍스트 취득
+      var valOfDIV = "국민 763202 01 135024";
+
+      // textarea 생성
+      var textArea = document.createElement("textarea");
+
+      // textarea 추가
+      document.body.appendChild(textArea);
+
+      // textara의 value값으로 div내부 텍스트값 설정
+      textArea.value = valOfDIV;
+
+      // textarea 선택 및 복사
+      textArea.select();
+      document.execCommand("copy");
+
+      // textarea 제거
+      document.body.removeChild(textArea);
+      alert(valOfDIV + " 복사 되었습니다.");
+    };
+
+    document.getElementById("hs_parents").onclick = function () {
+      // div 내부 텍스트 취득
+      var valOfDIV = "농협 352 1276 7964 43";
+
+      // textarea 생성
+      var textArea = document.createElement("textarea");
+
+      // textarea 추가
+      document.body.appendChild(textArea);
+
+      // textara의 value값으로 div내부 텍스트값 설정
+      textArea.value = valOfDIV;
+
+      // textarea 선택 및 복사
+      textArea.select();
+      document.execCommand("copy");
+
+      // textarea 제거
+      document.body.removeChild(textArea);
+      alert(valOfDIV + " 복사 되었습니다.");
+    };
+
+    document.getElementById("hs_me").onclick = function () {
+      // div 내부 텍스트 취득
+      var valOfDIV = "국민 933902 01 589710";
+
+      // textarea 생성
+      var textArea = document.createElement("textarea");
+
+      // textarea 추가
+      document.body.appendChild(textArea);
+
+      // textara의 value값으로 div내부 텍스트값 설정
+      textArea.value = valOfDIV;
+
+      // textarea 선택 및 복사
+      textArea.select();
+      document.execCommand("copy");
+
+      // textarea 제거
+      document.body.removeChild(textArea);
+      alert(valOfDIV + " 복사 되었습니다.");
+    };
+
+    document.getElementById("wedding_copy").onclick = function () {
+      // div 내부 텍스트 취득
+      var valOfDIV = "https://kimsangsoo.github.io/wedding-card-1/";
 
       // textarea 생성
       var textArea = document.createElement("textarea");
