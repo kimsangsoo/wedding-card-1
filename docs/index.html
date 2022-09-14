@@ -523,10 +523,10 @@
 
 					  <div class="collapse" id="ss">
 						<div class="card card-body">
-							<div class="date" id="ss_parents">
-								농협 312 0118 4610 11 김상수. (부)김영태 
+							<div class="date" id="ss_parents" value="농협 312 0118 4610 11">
+								농협 312 0118 4610 11 김상수. (부)김영태 <span class="badge">복사</span>
 							</div>
-							<span class="badge">복사</span>
+							
 							<div class="date">
 								국민 763202 01 135025 김상수 <span class="badge">복사</span>
 							</div>
@@ -536,10 +536,10 @@
 					  <div class="collapse mt-1" id="hs">
 						<div class="card card-body">
 							<div class="date">
-								농협 352 1276 7964 43 최수경
+								농협 352 1276 7964 43 최수경 <span class="badge badge-info">복사</span>
 							</div>
 							<div class="date">
-								국민 933902 01 589710 최효실
+								국민 933902 01 589710 최효실 <span class="badge badge-warning">복사</span>
 							</div>
 						</div>
 					  </div>
@@ -548,6 +548,31 @@
 					
 					
                 </div>
+
+				<script>
+
+					// 3. 다른 태그(div등)의 값 복사 기능 구현
+					document.getElementById("ss_parents").onclick = function(){
+						// div 내부 텍스트 취득
+						const valOfDIV = document.getElementById("div").innerText;
+				
+						// textarea 생성
+						const textArea = document.createElement('textarea');
+				
+						// textarea 추가
+						document.body.appendChild(textArea);
+						
+						// textara의 value값으로 div내부 텍스트값 설정
+						textArea.value = valOfDIV;
+				
+						// textarea 선택 및 복사
+						textArea.select();
+						document.execCommand('copy');
+				
+						// textarea 제거
+						document.body.removeChild(textArea);
+					}
+					</script>
 				<!-- <div class="col-md-6">
 					<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
 						<span class="icon">
@@ -699,30 +724,7 @@
     });
 </script>
 
-<script>
 
-    // 3. 다른 태그(div등)의 값 복사 기능 구현
-    document.getElementById("ss_parents").onclick = function(){
-        // div 내부 텍스트 취득
-        const valOfDIV = document.getElementById("div").innerText;
-
-        // textarea 생성
-        const textArea = document.createElement('textarea');
-
-        // textarea 추가
-        document.body.appendChild(textArea);
-        
-        // textara의 value값으로 div내부 텍스트값 설정
-        textArea.value = valOfDIV;
-
-        // textarea 선택 및 복사
-        textArea.select();
-        document.execCommand('copy');
-
-        // textarea 제거
-        document.body.removeChild(textArea);
-    }
-	</script>
 
 	</body>
 </html>
