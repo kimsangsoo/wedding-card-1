@@ -1,5 +1,5 @@
 # 김상수 최효실 모바일 청첩장
-![메인사진](https://github.com/kimsangsoo/wedding-card-1/raw/master/docs/images/sub1.jpeg)
+![메인사진](https://github.com/kimsangsoo/wedding-card-1/raw/master/docs/images/CHJ_2117.jpg)
 
 ## 예식정보
 * 날짜 : 2022.11.27. SUN PM 03:00
