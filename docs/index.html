@@ -111,7 +111,19 @@
           <div class="row">
             <div class="col-xs-10 text-right menu-1">
               <ul>
-                <li class="active"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#home">Home</a></li>
+              </ul>
+              <ul>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#invitation">INVITATION</a></li>
+              </ul>
+              <ul>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#memory">OUR MEMORIES</a></li>
+              </ul>
+              <ul>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="index.html">COME TO WAY</a></li>
+              </ul>
+              <ul>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="index.html">ACCOUNT</a></li>
               </ul>
             </div>
           </div>
@@ -126,7 +138,7 @@
         data-stellar-background-ratio="0.5"
       >
         <div class="overlay"></div>
-        <div class="container">
+        <div class="container" id="home">
           <div class="row">
             <div class="col-md-8 col-md-offset-2 text-center">
               <div class="display-t">
@@ -244,8 +256,8 @@
         style="background-image: url(images/valley.jpeg)"
       >
         <div class="overlay"></div>
-        <div class="container">
-          <div class="row">
+        <div class="container" >
+          <div class="row" id="invitation">
             <div
               class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box"
             >
@@ -268,7 +280,7 @@
                         <span>3:30 PM</span>
                       </div>
                       <span style="font-family: 'Nanum Myeongjo', 'Nanum Gothic', sans-serif, 'helvetica', serif, 'AppleGothic;">
-                        서울 강남구 강남대로 262 B1층
+                        서울 강남구 강남대로 262 B1층 브라이드 벨리
                         <br />
                         (도곡동 949-3)
                       </span>
@@ -311,7 +323,7 @@
       <!-- -->
       <div id="fh5co-gallery" class="fh5co-section-gray">
         <div class="container">
-          <div class="row">
+          <div class="row" id="memory">
             <div
               class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box"
             >
@@ -558,7 +570,10 @@
                       <div style="font-size: 0.9em; font-family: 'Nanum Myeongjo', 'Nanum Gothic', sans-serif, 'helvetica', serif, 'AppleGothic;">
                         국민 933902 01 589710<span class="button" id="hs_me">복사</span>
                         <br />예금주) 최효실
-                        
+                      </div>
+                      <div style="font-size: 0.9em; font-family: 'Nanum Myeongjo', 'Nanum Gothic', sans-serif, 'helvetica', serif, 'AppleGothic;">
+                        하나 1249 10 27304307<span class="button" id="mh_me">복사</span>
+                        <br />예금주) 정명희
                       </div>
                     </div>
                   </div>
@@ -750,6 +765,28 @@
     document.getElementById("hs_me").onclick = function () {
       // div 내부 텍스트 취득
       var valOfDIV = "국민 933902 01 589710";
+
+      // textarea 생성
+      var textArea = document.createElement("textarea");
+
+      // textarea 추가
+      document.body.appendChild(textArea);
+
+      // textara의 value값으로 div내부 텍스트값 설정
+      textArea.value = valOfDIV;
+
+      // textarea 선택 및 복사
+      textArea.select();
+      document.execCommand("copy");
+
+      // textarea 제거
+      document.body.removeChild(textArea);
+      alert(valOfDIV + " 복사 되었습니다.");
+    };
+
+    document.getElementById("mh_me").onclick = function () {
+      // div 내부 텍스트 취득
+      var valOfDIV = "하나 12491027304307";
 
       // textarea 생성
       var textArea = document.createElement("textarea");
